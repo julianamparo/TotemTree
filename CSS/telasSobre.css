@@ -1,0 +1,242 @@
+﻿@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+/*Resetando defeault dos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos gerais*/
+
+/*Fundo*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+/*Cabeçalho*/
+.cabecalho{
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    padding: 3px 0px;
+}
+
+header{
+    text-align: center;
+    background-color: #EE7823;
+    color: #FFFFFF;
+}
+
+header li{
+    display: inline-block;
+}
+
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0px 20px 0 20px;
+    font-size: 10pt;
+}
+
+header li a:hover{
+    color: #513036;
+}
+
+/*Logotipo*/
+.logo{
+    width: 130px;
+    height: 150px;
+    margin: 30px auto -20px auto;
+}
+
+/*Texto TTT*/
+#TTT{
+    font-size: 14pt;
+    display: block;
+    line-height:25px;
+    margin: 15px 820px 0px 120px;
+    text-align: justify;
+}
+#ttt_definicao{
+    font-size: 13pt;
+}
+
+#olho{
+    font-family: 'Lobster','Tahoma' sans-serif;
+    font-size: 25pt;
+    color: #512f36;
+    text-align:center;
+    line-height:40px;
+}
+.fotoSobre{
+    display: block;
+    margin: 40px 300px auto 180px;
+}
+
+/*Nomes*/
+h3{
+    font-family: 'Lobster', 'Tahoma' sans-serif;
+    font-size: 25pt;
+    color: #512f36;
+}
+
+/*Dividor - Linha*/
+.linha-vertical {
+    display: block;
+    margin: -350px 0px 0px 665px;
+    height: 405px;
+    border-left: 1px solid;
+    border-color:  #EE7823;
+}
+
+/*Fernanda*/
+#fernanda{
+    display: block;
+    margin: -400px 0px 0px 780px;
+}
+#fenny{
+    display: block;
+    margin: -85px 0px 0px 130px;
+}
+#pfernanda{
+    display: block;
+    margin: 0px 0px 0px 130px;
+}
+
+/*Gilberto*/
+#gilberto{
+    display: block;
+    margin: 70px 0px 0px 780px;
+}
+#gil{
+    display: block;
+    margin: -85px 0px 0px 130px;
+}
+#pgilberto{
+    display: block;
+    margin: 0px 0px 0px 130px;
+}
+
+/*Juliana*/
+#juliana{
+    display: block;
+    margin: 70px 0px 0px 780px;
+}
+#ju{
+    display: block;
+    margin: -85px 0px 0px 130px;
+}
+#pjuliana{
+    display: block;
+    margin: 0px 0px 0px 130px;
+}
+
+/*Rodape*/
+.rodape{
+    background-color: #EE7823;
+    color: #FFFFFF;
+    font-size: 8pt;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    padding-top: 3px;
+    bottom: 0px;
+}
+
+/*RESPONSIVIDADE: VIEW PARA CELULAR*/
+@media screen and (max-width: 480px){
+    header{
+        width: 100%;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+    /*Logotipo*/
+    .logo{
+        margin-top: 10%;
+        margin-left: 35%;
+        margin-bottom: -30px;
+    }
+    /*Texto TTT*/
+    #TTT{
+        font-size: 12pt;
+        display: block;
+        line-height:25px;
+        margin: 15px 20px 0px 20px;
+        text-align: justify;
+    }
+    #ttt_definicao{
+        font-size: 11pt;
+    }
+
+    #olho{
+        font-family: 'Lobster','Tahoma' sans-serif;
+        font-size: 16pt;
+        color: #512f36;
+        text-align:center;
+        line-height: 23px;
+        margin-top: -10px;
+    }
+
+    h3{
+        font-size: 18pt;
+    }
+    /*Fernanda*/
+    #fernanda{
+        display: block;
+        margin: -50px 10px 0px 10px;
+    }
+    #fenny{
+        display: block;
+        margin: -85px 0px 0px 120px;
+    }
+    #pfernanda{
+        display: block;
+        margin: 0px 0px 0px 120px;
+    }
+
+    /*Gilberto*/
+    #gilberto{
+        display: block;
+        margin: 40px 10px 0px 10px;
+    }
+    #gil{
+        display: block;
+        margin: -85px 0px 0px 120px;
+    }
+    #pgilberto{
+        display: block;
+        margin: 0px 0px 0px 120px;
+    }
+
+    /*Juliana*/
+    #juliana{
+        display: block;
+        margin: 40px 10px 0px 10px;
+    }
+    #ju{
+        display: block;
+        margin: -85px 0px 0px 120px;
+    }
+    #pjuliana{
+        display: block;
+        margin: 0px 0px 0px 130px;        
+        margin: 0px 0px 0px 120px;    
+    }
+    /*Rodape*/
+    .rodape{
+        display: block;
+        font-size: 8pt;
+        text-align: center;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        padding-top: 3px;
+        bottom: -120px;
+    }
+}

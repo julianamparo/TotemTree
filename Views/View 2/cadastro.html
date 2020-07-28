@@ -1,0 +1,110 @@
+<!--
+    Projeto TCC Totem Tree
+    @Dev Frontend Fernanda Carolina Aguilera Abarca
+    @Dev Backend Gilberto Shimokawa Falcão e Juliana Amaparo
+    @Data   18/02/2018
+-->
+
+<!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+
+        <!--Referencias para navegadores-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <!--CSS e favicon-->
+        <link rel="shortcut icon" href="Imagens/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="CSS/telasCadastro.css">
+
+        <title>Cadastre-se</title>
+
+        <!--Script do pop-up-->
+        <!--<script src="JS/pop-upCadastro.js"></script>-->
+
+    </head>
+    <body>
+
+         <!--Cabeçalho-->
+         <header>
+                <div class="cabecalho">
+                    <nav>
+                        <ul>
+                            <li><a href="sobre.html">sobre</a></li>
+                            <li>|</li>
+                            <li><a href="termos.html">termos de uso</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+        <!--Logotipo-->
+        <div class="logo">
+            <img src="Imagens/logo100px.png"/>
+        </div>
+
+         <!--Caixa de Cadastro-->
+         <form class="telaCadastro" method="post" action="link" enctype="multipart/form-data">
+             <div id="nome">
+                <label for="nome">Nome completo*</label>
+                <input type="text" placeholder="Digite seu nome completo" title="Digite seu nome completo" required/></br>
+            </div>
+
+            <div id="email">
+                <label for="e-mail*">E-mail*</label>
+                <input type="email" placeholder="Digite seu e-mail" title="Digite seu e-mail" required/>
+            </div>
+            
+            <div id="email2">
+                <label for="confirmaE-mail">Confirme seu e-mail*</label>
+                <input type="email" placeholder="Confirme seu e-mail" title="Confirme seu e-mail" required/></br>
+            </div>
+            
+            <div id="senha">
+                <label for="senha">Senha* (use letras e números)</label>
+                <input type="password" placeholder="Entre com a senha" pattern="^.{6,8}" title="sua senha deve ter entre 6 e 8 carcteres" required/>
+            </div>
+            
+            <div id="senha2">
+                <label for="senha">Confirme sua senha*</label>
+                <input type="password" placeholder="Confirme sua senha" pattern="^.{6,8}" title="sua senha deve ter entre 6 e 8 carcteres" required/></br>
+            </div>
+            
+            <div id="genero">
+                <label for="genero">Selecione o seu gênero</label>
+                    <select title="Selecione o seu gênero">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                    </select>
+            </div>
+            
+            <div id="aniversario">
+                <label for="data">Data de nascimento</label>
+                <input type="date" id="data"/>
+            </div>
+
+            <!--Box "concordo com os termos de uso"-->
+            <div id="borda">
+                <div id="concordo">
+                    <label for="concordo">Concordo com os termos de uso apresentados <a href="termos.html" required>aqui</a>.</label>
+                    <input type="checkbox" id="concordo" value="1"/></br>
+                </div>
+            </div>
+
+            <!--PARA JU: <asp:Button ID="cancelar" Text="Cancelar" runat="server" OnClick="btnLogin_Click"/>-->
+            <button type="button" onclick="window.location='cancelaCadastro.html'" id="cancelar">Cancelar</button>
+     
+            <!--PARA JU: <asp:Button ID="continuar" Text="Continuar" runat="server" OnClick="btnLogin_Click"/>-->
+            <button id="continuar">Continuar</button>
+
+        </form>
+
+        <!--Rodapé-->
+        <footer>
+            <div class="rodape">TTT 2019:&nbsp; F. Abarca - G. Shimokawa - J. Amparo</div>
+        </footer>
+    
+    </body>
+
+<html>

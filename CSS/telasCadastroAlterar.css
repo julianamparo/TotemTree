@@ -1,0 +1,479 @@
+﻿@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,500i,700,700i');
+
+/*Resetando defeault dos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos gerais*/
+
+/*Fundo*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+/*Cabeçalho*/
+.cabecalho{
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    padding: 3px 0px;
+}
+
+header{
+    text-align: center;
+    background-color: #EE7823;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+}
+
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0px 20px 0 20px;
+    font-size: 10pt;
+}
+
+header li a:hover{
+    color: #513036;
+}
+
+/*Logotipo*/
+.logo{
+    margin-top: 3%;
+    margin-left: 45%;
+    margin-bottom: 1%;
+}
+
+/*Caixa de cadastro*/
+.telaCadastro{
+    background-color: #DADADA;
+    color: #000000;
+    width: 1000px;
+    height: 310px;
+    margin: 3px auto 50px auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+    font-size: 11pt;
+}
+/*Campo nome*/
+#nome {
+    display: block;
+    margin: 0px 4px 0px 6px;
+    font-size: 12pt;
+    color: #000000;
+}
+#txtNome {
+    display: block;
+    margin: 5px 4px 0px 2px;
+    padding: 5px 0px 5px 15px;
+    font-size: 12pt;
+    color: #000000;
+    width: 97.5%;
+}
+/*Campo e-mail*/
+#email {
+    display: block;
+    margin: 0px 4px 0px 6px;
+    font-size: 12pt;
+    color: #000000;
+}
+#txtEmail{
+    display: block;
+    margin: 5px 4px 0px 2px;
+    padding: 5px 0px 5px 15px;
+    font-size: 12pt;
+    color: #000000;
+    width: 430px;
+}
+#email2 {
+    display: block;
+    margin: -75px 4px 0px 520px;
+    font-size: 12pt;
+    color: #000000;
+}
+#txtEmail2 {
+    display: block;
+    margin: 5px 4px 0px 2px;
+    padding: 5px 0px 5px 15px;
+    font-size: 12pt;
+    color: #000000;
+    width: 430px;
+}
+/*Campo senha*/
+#senha {
+    display: block;
+    margin: 0px 4px 0px 6px;
+    font-size: 12pt;
+    color: #000000;
+}
+#txtSenha {
+    display: block;
+    margin: 5px 4px 0px 2px;
+    padding: 5px 0px 5px 15px;
+    font-size: 12pt;
+    color: #000000;
+    width: 360px;
+}
+#senha2 {
+    display: block;
+    margin: -75px 4px 0px 520px;
+    font-size: 12pt;
+    color: #000000;
+}
+#txtSenha2 {
+    display: block;
+    margin: 5px 4px 0px 2px;
+    padding: 5px 0px 5px 15px;
+    font-size: 12pt;
+    color: #000000;
+    width: 355px;
+}
+
+#verSenha{
+    background: url(../Imagens/olho1.png) no-repeat;
+    display: block;
+    width: 5px;
+    height: 24px;
+    margin-top: -105px;
+    margin-left: 375px;
+    padding: 15px 30px 15px 30px;
+    background-color: #EE7823;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+
+#verSenha:hover{
+    background-color: #513036;
+}
+
+#verSenha1{
+    background: url(../Imagens/olho1.png) no-repeat;
+    display: block;
+    width: 5px;
+    height: 24px;
+    margin-top: -36px;
+    margin-left: 885px;
+    padding: 15px 30px 15px 30px;
+    background-color: #EE7823;
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+#verSenha1:hover{
+    background-color: #513036;
+}
+
+/*Caixa excluir*/
+.telaexcluir{
+    background-color: #f8c291;
+    color: #000000;
+    width: 1000px;
+    height: 85px;
+    margin: 40px 0 30px -20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    position: absolute;
+    font-size: 11pt;
+}
+
+#frase{
+    font-size: 14pt;
+}
+
+/*Botoes*/
+#alterar{
+display: block;
+margin-left: 523px;
+padding: 15px 30px 15px 30px;
+background-color: #00B49D;
+color: #FFFFFF;
+font-size: 12pt;
+width: 200px;
+}
+#alterar:hover{
+    background-color: #513036;
+}
+#prancheta{
+    display: block;
+    margin-top: -53px;
+    margin-left: 750px;
+    padding: 15px 30px 15px 30px;
+    background-color: #EE7823;
+    color: #FFFFFF;
+    font-size: 12pt;
+    width: 200px;
+}
+#prancheta:hover{
+    background-color: #513036;
+}
+#prancheta a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#alterar{
+    display: block;
+    margin-left: 523px;
+    padding: 15px 30px 15px 30px;
+    background-color: #00B49D;
+    color: #FFFFFF;
+    font-size: 12pt;
+    width: 200px;
+}
+#alterar:hover{
+    background-color: #513036;
+}
+#excluir{
+    display: block;
+    margin-top: -25px;
+    margin-left: 723px;
+    padding: 15px 30px 15px 30px;
+    background-color: #C2181E;
+    color: #FFFFFF;
+    font-size: 12pt;
+    width: 200px;
+}
+#excluir:hover{
+    background-color: #513036;
+}
+#excluir a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#cancelar{
+    display: block;
+    margin-top: -53px;
+    margin-left: 750px;
+    padding: 15px 30px 15px 30px;
+    background-color: #2f3542;
+    color: #FFFFFF;
+    font-size: 12pt;
+    width: 200px;
+}
+#cancelar:hover{
+    background-color: #57606f;
+}
+#cancelar a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/*Rodape*/
+.rodape{
+    background-color: #EE7823;
+    color: #FFFFFF;
+    font-size: 8pt;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    padding-top: 3px;
+    bottom: 0px;
+}
+
+/*RESPONSIVIDADE: VIEW PARA CELULAR*/
+@media screen and (max-width: 480px){
+    /*Logotipo*/
+    .logo{
+        display: none;
+    }
+
+    /*Caixa de cadastro*/
+    .telaCadastro{
+        background-color: #DADADA;
+        color: #000000;
+        width: 340px;
+        height: 455px;
+        margin: 70px auto 50px auto;
+        padding-top: 20px;
+        padding-left: 20px;
+        text-align: left;
+        position: relative;
+        font-size: 11pt;
+    }
+    /*Campo nome*/
+    #nome {
+        display: block;
+        margin: 0px 4px 0px -7px;
+        font-size: 12pt;
+        color: #000000;
+    }
+    #nome input{
+        display: block;
+        margin: 5px 4px 0px 2px;
+        padding: 5px 0px 5px 15px;
+        font-size: 12pt;
+        color: #000000;
+        width: 97.5%;
+    }
+    /*Campo e-mail*/
+    #email {
+        display: block;
+        margin: -13px 4px 0px -7px;
+        font-size: 12pt;
+        color: #000000;
+    }
+    #email input{
+        display: block;
+        margin: 5px 4px 0px 2px;
+        padding: 5px 0px 5px 15px;
+        font-size: 12pt;
+        color: #000000;
+        width: 97.5%;
+    }
+    #email2 {
+        display: block;
+        margin: 0px 4px 0px -21px;
+        padding: 8px 0px 5px 15px;
+        font-size: 12pt;
+        color: #000000;
+    }
+    #email2 input{
+        display: block;
+        margin: 5px 4px 0px 2px;
+        padding: 5px 0px 5px 15px;
+        font-size: 12pt;
+        color: #000000;
+        width: 97.5%;
+    }
+    /*Campo senha*/
+    #senha {
+        display: block;
+        margin: -13px 4px 0px -7px;
+        font-size: 12pt;
+        color: #000000;
+    }
+    #senha input{
+        display: block;
+        margin: 5px 4px 0px 2px;
+        padding: 5px 0px 5px 15px;
+        font-size: 12pt;
+        color: #000000;
+        width: 70%;
+    }
+    #senha2 {
+        display: block;
+        margin: 7px 4px 0px -7px;
+        font-size: 12pt;
+        color: #000000;
+    }
+    #senha2 input{
+        display: block;
+        margin: 5px 4px 0px 2px;
+        padding: 5px 0px 5px 15px;
+        font-size: 12pt;
+        color: #000000;
+        width: 70%;
+    }
+
+    #verSenha{
+    margin-top: -188px;
+    margin-left: 240px;
+    }
+
+    #verSenha1{
+        margin-top: 50px;
+        margin-left: 240px;
+    }
+
+
+    /*Fundo excluir*/
+    .telaexcluir{
+    width: 100%;
+    height: 160px;
+    margin: 40px 0 30px -20px;
+    position: absolute;
+    }
+        
+    #frase{
+        font-size: 14pt;
+    }
+
+    /*Botoes*/
+    #alterar{
+        display: block;
+        margin-top: 0px;
+        margin-left: -5px;
+        padding: 15px 30px 15px 30px;
+        background-color: #00B49D;
+        color: #FFFFFF;
+        font-size: 12pt;
+        width: 150px;
+    }
+    #alterar:hover{
+        background-color: #513036;
+    }
+    #prancheta{
+        display: block;
+        margin-top: -53px;
+        margin-left: 158px;
+        padding: 15px 30px 15px 30px;
+        background-color: #EE7823;
+        color: #FFFFFF;
+        font-size: 12pt;
+        width: 150px;
+    }
+    #prancheta:hover{
+        background-color: #513036;
+    }
+    #prancheta a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    #excluir{
+        display: block;
+        margin-top: 15px;
+        margin-left: -5px;
+        padding: 15px 30px 15px 30px;
+        background-color: #C2181E;
+        color: #FFFFFF;
+        font-size: 12pt;
+        width: 150px;
+    }
+    #excluir:hover{
+        background-color: #513036;
+    }
+    #excluir a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    #cancelar{
+        display: block;
+        margin-top: -53px;
+        margin-left: 158px;
+        padding: 15px 30px 15px 30px;
+        background-color: #2f3542;
+        color: #FFFFFF;
+        font-size: 12pt;
+        width: 150px;
+    }
+    #cancelar:hover{
+        background-color: #57606f;
+    }
+    #cancelar a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    /*Rodape*/
+    .rodape{
+        background-color: #EE7823;
+        color: #FFFFFF;
+        font-size: 8pt;
+        text-align: center;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        padding-top: 3px;
+        bottom: 0px;
+    }
+}

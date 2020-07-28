@@ -1,0 +1,255 @@
+﻿@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,500i,700,700i');
+
+/*Resetando defeault dos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+textarea{
+    display: block;
+    height: 500px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+/*Barra*/
+.barra{
+    width: 100%;
+    height: 36px;
+    background-color: #B1B7BC;
+    padding-top: 3px;
+}
+.barra li{
+    display: inline-block;
+    font-size: 16pt;
+    padding: 3px 10px 3px 10px;
+}
+.barra li#nome{
+    padding-top: -10px;
+}
+.barra li#icone{
+    padding: 5px 10px 3px 20px;
+}
+.barra li#icone:hover{
+    padding: 5px 10px 3px 20px;
+    background-color: #DADADA;
+}
+
+.editorStyle {
+
+}
+
+/*Refresh*/
+#atualizar{
+    display: none;
+}
+
+/*Busca*/
+.divBusca{
+    font-size: 13pt;
+    font-weight: 700;
+    background-color: #4D4D4C;
+    width: 390px;
+    height: 40px;
+    text-align: left;
+    padding-top: 0px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+#txtBusca{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    margin-left: 3px;
+}
+
+.btnBusca{
+    margin-top: 5px;
+}
+
+/*Fundo árvore*/
+.temaArvore {
+    display: block;
+    width: 390px;
+    height: 510px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #e1e1e1;
+    overflow: scroll;
+}
+
+.quadroArvore {
+    display: block;
+    width: 300px;
+    height: 370px;
+    padding: 10px 0 0 15px;
+    
+}
+
+.acaoPainel {
+   padding: 10px 0 0 13px;
+}
+
+.panelButtons {
+display: block;
+width: 160px;
+height: 40px;
+margin: 0px 10px 0px 200px;
+background-color: #f5f0f0;
+border-style: outset;
+border-width: 1px;
+}
+
+
+/*.tvUsuario_0{
+    text-decoration: none;
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 3px 5px 3px 5px;
+}
+
+#tvUsuario {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13pt;   
+    line-height: 30px;
+}*/
+
+.tvUsuario_0{
+    text-decoration: none;
+    color: #1a1818;
+    padding: 3px 5px 3px 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8pt;   
+    line-height: 30px;
+}
+
+
+.selectedNode{
+    background-color: #8e44ad;
+    color: #fff;
+    margin-top: 40px;
+}
+/*Anúncio*/
+.anuncio {
+    display: block;
+    bottom: 0px;
+    margin-top: 0px;
+}
+
+/*prancheta*/
+.prancheta {
+    display: block;
+    width: 1130px;
+    margin: -670px 0px 0px 390px;
+}
+
+/*Rodape*/
+.rodape{
+    background-color: #00556D;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 380x;
+}
+
+/*Impressao*/
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #printable, #printable * {
+      visibility: visible;
+    }
+    #printable {
+        display: block;
+        width: 1006px;
+        margin: -618px 0px 0px 360px;
+    }
+  }
+
+  /*RESPONSIVIDADE: VIEW PARA CELULAR*/
+@media screen and (max-width: 480px){
+    
+    /*Barra*/
+    .barra{
+        width: 100%;
+        background-color: #B1B7BC;
+    }
+    .barra li{
+        display: inline-block;
+        font-size: 14pt;
+        padding: 3px 10px 3px 10px;
+    }
+    .barra li#nome{
+        padding-top: -10px;
+    }
+    .barra li#icone{
+        padding: 5px 8px 3px 10px;
+    }
+    .barra li#icone:hover{
+        padding: 5px 8px 3px 10px;
+        background-color: #DADADA;
+    }
+
+    /*Gerador de temas*/
+    .gerador{
+        font-size: 12pt;
+        font-weight: 700;
+        background-color: #4D4D4C;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .temaArvore {
+        display: block;
+        width: 360px;
+        height: 300px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #e1e1e1;
+    }
+
+    /*prancheta*/
+    .prancheta {
+        display: block;
+        width: 100%;
+        margin: -500px 0px 0px 0px;
+    }
+        
+    /*Anúncio*/
+    .anuncio {
+    display: block;
+    margin-top: 380px;
+    } 
+
+    /*Rodape*/
+    .rodape{
+        display: none;
+    }
+
+    .divBusca{
+    font-size: 13pt;
+    font-weight: 700;
+    background-color: #4D4D4C;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    padding-top: -5px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+    #txtBusca{
+        width: 280px;
+        height: 30px;
+        border-radius: 10px;
+        border: 0px;
+    }
+}

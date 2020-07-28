@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-widht initial-scale=1"/>
+	<script src="ckeditor/ckeditor.js"></script>
+	<script src="ckeditor/samples/js/sample.js"></script>
+	
+	<!--Estilos CSS-->
+	<link rel="shortcut icon" href="Imagens/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="CSS/telasPrancheta1.css">
+
+	<!--Responsividade -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">  
+
+	<title>Prancheta</title>
+
+</head>
+<body id="main">
+	<header>
+		<div class="barra">
+		   <nav>
+			   <ul>
+				   <li id="nome">Nome do usuário</li>
+				   <li id="icone"><a href="cadastroAlterar.html"><img src="Imagens/engrenagem.png" title="Configurações"/></a></li>
+				   <li id="icone"><a href="index.html"><img src="Imagens/home.png" title="Home"/></a></li>
+				   <li id="icone"><a href="#"><img src="Imagens/save.png" title="Salvar"/></a></li>
+				   <li id="icone"><a href="prancheta.html"><img src="Imagens/new.png" title="Novo"/><input type="button" id="atualizar" value="Atualizar" onClick="history.go(0)"></a></li>
+			   </ul>
+		   </nav>
+	   </div>
+   </header>
+
+   <!--Gerador de temas: título-->
+   <section class="gerador">
+		<div id="frase">Gerador de temas</div>
+	</section>
+
+	<!--Fundo árvore-->
+	<section class="arvore">
+		<div id="arvore"></div>
+	</section>
+
+	<!--Anúncios-->
+	<section class="anuncio">
+		<div id="anuncio"><img src="Imagens/anuncio.png"/></div>
+	</section>
+
+	<!--Prancheta-->
+        <div class="prancheta">
+            <main>
+                <div class="adjoined-bottom">
+                    <div class="grid-container">
+                        <div class="grid-width-100" id="printable">
+                            <div id="editor"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+<!--Inicializador JS-->
+<script>
+	initSample();
+</script>
+
+<!--Rodapé-->
+<footer>
+    <div class="rodape"></div>
+</footer>
+
+</body>
+</html>

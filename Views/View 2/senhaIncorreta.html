@@ -1,0 +1,71 @@
+<!--
+    Projeto TCC Totem Tree
+    @Dev Frontend Fernanda Carolina Aguilera Abarca
+    @Dev Backend Gilberto Shimokawa Falcão e Juliana Amaparo
+    @Data   18/02/2018
+-->
+<!DOCTYPE html>
+    <html lang="pt-br">
+   
+    <head>
+        <!--Referencias para navegadores-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Totem Tree: Sua árvore de conhecimento"/>
+		<meta name="keyword" content="mapa-mental, editor de texto"/>
+        <meta name="viewport" content="width-device-widht initial-scale=1"/>
+       
+        <!--CSS e favicon-->
+        <link rel="shortcut icon" href="Imagens/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="CSS/telasLogin.css">
+
+        <!--Responsividade -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">  
+
+        <!--Imagem de fundo-->
+        <style>body{background-image: url(Imagens/bkImage.jpg);}</style>
+        
+        <title>Totem Tree</title>
+
+    </head>
+    <body>
+
+        <!--Cabeçalho-->
+        <header>
+            <div class="cabecalho">
+                <nav>
+                    <ul>
+                        <li><a href="sobre.html">sobre</a></li>
+                        <li>|</li>
+                        <li><a href="termos.html">termos de uso</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Logotipo-->
+        <div class="logo">
+            <img src="Imagens/logoMenor.png"/>
+        </div>
+
+        <!--Caixa de Login-->
+        <form class="tela" method="post" action="link" enctype="multipart/form-data">
+                <label for="login">login</label>
+                <input type="email" placeholder="entre com o seu e-mail" title="o email deve conter @" required="required"/>
+                <label for="senha">senha</label>
+                <input type="password" placeholder="entre com a senha" pattern="^.{6,8}" title="sua senha deve ter entre 6 e 8 carcteres" required="required"/>
+                <label for="erro" id="erro">Senha ou usuário incorretos. Tente novamente.</label>
+               
+                <!--PARA JU: <asp:Button ID="btn" Text="Continuar" runat="server" OnClick="btnLogin_Click"/>-->
+                <button type="button" id="btn" onclick="window.location='prancheta.html'">Continuar</button>
+
+                <p id="esqueci"><a href="recuperarSenha.html">- Esqueci minha senha/login</a></p>
+                <p id="cadastro"><a href="cadastro.html">- Cadastro</a></p>
+        </form>
+
+        <!--Rodapé-->
+        <footer>
+            <div class="rodape">TTT 2019:&nbsp; F. Abarca - G. Shimokawa - J. Amparo</div>
+        </footer>
+
+    </body>
+</html>
